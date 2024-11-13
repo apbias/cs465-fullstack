@@ -1,0 +1,26 @@
+[
+    {
+        "name": "First Class Room",
+        "link": "/rooms",
+        "image": "first-class.jpg",
+        "alt": "Img",
+        "description": "Cras dui sapien, feugiat vitae tristique ut, lobortis tempor orci. Donec pulvinar sagittis metus ut tristique. Pellentes que habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas idios.",
+        "rate": "220 / Day"
+    },
+    {
+        "name": "Deluxe Room",
+        "link": "/rooms",
+        "image": "deluxe.jpg",
+        "alt": "Img",
+        "description": "Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis.",
+        "rate": "150 / Day"
+    },
+    {
+        "name": "Suite Room",
+        "link": "/rooms",
+        "image": "suite.jpg",
+        "alt": "Img",
+        "description": "Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis.",
+        "rate": "180 / Day"
+    }
+]

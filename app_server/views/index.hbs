@@ -1,2 +1,63 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Travlr Getaways Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div id="background">
+        <div id="page">
+            {{> header}}
+            
+            <div id="contents">
+                <div id="adbox">
+                    <img src="/images/{{banner.image}}" alt="Seaside">
+                    <h1>{{banner.title}}</h1>
+                    <p>{{banner.description}}</p>
+                </div>
+                
+                <div id="main">
+                    <div class="box">
+                        <div>
+                            <div>
+                                <h3>{{latestBlog.title}}</h3>
+                                {{#each latestBlog.posts}}
+                                <div>
+                                    <h4><a href="/{{link}}">{{title}}</a></h4>
+                                    <p>{{date}}</p>
+                                    <p>{{excerpt}}</p>
+                                </div>
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="testimonials" class="box">
+                        <div>
+                            <div>
+                                <h3>{{testimonials.title}}</h3>
+                                <p>
+                                    "{{testimonials.quote}}" - 
+                                    <a href="{{testimonials.authorLink}}">{{testimonials.author}}</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="sidebar">
+                    {{#each sidebar}}
+                    <div class="section">
+                        <a href="/{{link}}">
+                            <img src="/images/{{image}}" alt="Img">
+                        </a>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        {{> footer}}
+    </div>
+</body>
