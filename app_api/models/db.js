@@ -5,8 +5,17 @@ const readLine = require('readline');
 // Build the connection string and set the connection timeout.
 // timeout is in milliseconds.
 const connect = () => {
-    setTimeout(() => mongoose.connect(dbURI, {
-    }), 1000);
+    setTimeout(() => {
+        mongoose.connect(dbURI, {})
+            .then(() => {
+                // Only require models after successful connection
+                require('./users');
+                require('./travlr');
+            })
+            .catch(err => {
+                console.log('Error connecting to MongoDB:', err);
+            });
+    }, 1000);
 }
 // Monitor connection events
 mongoose.connection.on('connected', () => {
@@ -60,5 +69,6 @@ process.on('SIGTERM', () => {
 connect();
 
 // Import Mongoose schema
+require('./users');
 require('./travlr');
 module.exports = mongoose;
