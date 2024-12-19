@@ -8,13 +8,13 @@ I started with a simple Express HTML website for the customer-facing side, which
 
 For the admin side, I built a Single-Page Application (SPA) using Angular. Unlike the customer-facing site, the SPA loads once and updates content dynamically without refreshing the page, making it faster and more responsive for administrators managing the travel data.
 
-The backend uses MongoDB, a NoSQL database, because it handles unstructured data well and is ideal for our travel listings where content and fields might change frequently. Its flexibility allowed us to easily modify our travel packages without having to redesign the database structure each time - something that would be more challenging with a traditional SQL database.
+The backend uses MongoDB, a NoSQL database, because it handles unstructured data well and is ideal for our travel listings where content and fields might change frequently. Its flexibility allowed me to easily modify the travel packages without having to redesign the database structure each time - something that would be more challenging with a traditional SQL database.
 
 <b>Functionality</b>
 
-JSON and JavaScript serve different but complementary roles in our application. While JavaScript is the programming language that powers our application's behavior, JSON acts as the standardized format for data exchange. JSON made it possible for our frontend and backend to communicate efficiently by providing a consistent way to format data, whether we were storing travel listings in MongoDB or sending trip details to the browser.
+JSON and JavaScript serve different but complementary roles in my application. While JavaScript is the programming language that powers our application's behavior, JSON acts as the standardized format for data exchange. JSON made it possible for my frontend and backend to communicate efficiently by providing a consistent way to format data, whether I was storing travel listings in MongoDB or sending trip details to the browser.
 
-Throughout development, I improved our code through refactoring. A key example was when I moved from hard-coded HTML to reusable UI components. For instance, I created a standardized trip card component that could display any trip's details. This not only made my code more maintainable but also ensured a consistent look across the site. When I needed to update how trips were displayed, I only had to change the code in one place instead of updating multiple pages. This same approach helped when I added features like the admin login - I could reuse components and be confident they would work consistently across the application.
+Throughout development, I improved my code through refactoring. A key example was when I moved from hard-coded HTML to reusable UI components. For instance, I created a standardized trip card component that could display any trip's details. This not only made my code more maintainable but also ensured a consistent look across the site. When I needed to update how trips were displayed, I only had to change the code in one place instead of updating multiple pages. This same approach helped when I added features like the admin login - I could reuse components and be confident they would work consistently across the application.
 
 <b>Testing</b>
 
@@ -22,7 +22,7 @@ In developing my full stack application, testing was crucial at multiple levels.
 
 Security testing became particularly important when I added user authentication. I needed to verify that protected routes could only be accessed with valid JWT tokens, ensuring that sensitive operations like creating or modifying trips were restricted to authenticated administrators. This involved testing both successful scenarios (valid tokens) and failure scenarios (invalid or missing tokens) to ensure my security measures were working as intended. I used the website jwt.io to decode and verify the JWT tokens as part of my development process. 
 
-The process of testing helped identify and fix several challenges, such as handling date formats correctly in the database and ensuring proper data validation before storage. MongoDB Compass proved invaluable for verifying that my data was being stored and retrieved correctly, while Chrome's Developer Tools helped track down and resolve frontend issues.
+The process of testing helped me identify and fix several challenges, such as handling date formats correctly in the database or ensuring proper data validation before storage. MongoDB Compass proved invaluable for verifying that my data was being stored and retrieved correctly, while Chrome's Developer Tools helped track down and resolve frontend issues.
 
 <b>Reflection</b>
 
