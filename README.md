@@ -12,7 +12,7 @@ The backend uses MongoDB, a NoSQL database, because it handles unstructured data
 
 <b>Functionality</b>
 
-JSON and JavaScript serve different but complementary roles in my application. While JavaScript is the programming language that powers our application's behavior, JSON acts as the standardized format for data exchange. JSON made it possible for my frontend and backend to communicate efficiently by providing a consistent way to format data, whether I was storing travel listings in MongoDB or sending trip details to the browser.
+JSON and JavaScript serve different but complementary roles in my application. While JavaScript is the programming language that powers my application's behavior, JSON acts as the standardized format for data exchange. JSON made it possible for my frontend and backend to communicate efficiently by providing a consistent way to format data, whether I was storing travel listings in MongoDB or sending trip details to the browser.
 
 Throughout development, I improved my code through refactoring. A key example was when I moved from hard-coded HTML to reusable UI components. For instance, I created a standardized trip card component that could display any trip's details. This not only made my code more maintainable but also ensured a consistent look across the site. When I needed to update how trips were displayed, I only had to change the code in one place instead of updating multiple pages. This same approach helped when I added features like the admin login - I could reuse components and be confident they would work consistently across the application.
 
