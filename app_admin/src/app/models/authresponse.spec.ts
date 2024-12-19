@@ -1,7 +1,7 @@
-import { Authresponse } from './authresponse';
+import { AuthResponse } from './authresponse';
 
 describe('Authresponse', () => {
   it('should create an instance', () => {
-    expect(new Authresponse()).toBeTruthy();
+    expect(new AuthResponse()).toBeTruthy();
   });
 });
